@@ -28,8 +28,8 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 
 # 设置API密钥和URL
-BINANCE_API_URL = "https://api.binance.com"
-BINANCE_FUTURES_API_URL = "https://fapi.binance.com"
+BINANCE_API_URL = os.environ.get("BINANCE_API_URL")
+BINANCE_FUTURES_API_URL = os.environ.get("BINANCE_FUTURES_API_URL")
 DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 DEEPSEEK_API_URL = os.environ.get("DEEPSEEK_API_URL")
 
