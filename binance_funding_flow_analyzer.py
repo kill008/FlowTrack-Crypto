@@ -46,7 +46,7 @@ USER_AGENTS = [
 if not DEEPSEEK_API_KEY:
     logger.warning("DEEPSEEK_API_KEY not found in environment variables. AI analysis will not work.")
     st.warning("DeepSeek API Key not found. Please set the DEEPSEEK_API_KEY environment variable for AI analysis.")
-
+st.write("当前环境变量:", os.environ)
 # 创建一个带有重试逻辑的请求函数
 def make_api_request(url, params=None):
     """
