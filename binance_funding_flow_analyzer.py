@@ -804,7 +804,7 @@ def send_to_deepseek(data):
     )
 
     payload = {
-        "model": "deepseek-r1",
+        "model": "deepseek-chat",
         "messages": [{"role": "user", "content": prompt}],
         "stream": False,
         "max_tokens": 2048,
